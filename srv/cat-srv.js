@@ -3,7 +3,7 @@ const {getIOTDevices} = require('./read_iot_api')
 const {getIOTSensors} = require('./read_iot_api') 
 const {getIOTCapabilities} = require('./read_iot_api') 
 const {getIOTCapabilitiesMeasure} = require('./read_iot_api') 
-const {getIOTSensorsMeasureData2} = require('./read_iot_api') 
+const {getIOTSensorsMeasureData1} = require('./read_iot_api') 
 const db = require('./dbQuery')
 /**
  * Implementation for service defined in ./cat-srv.cds
@@ -122,7 +122,7 @@ const db = require('./dbQuery')
  //Step 6:
  const getIOTSensorsMeasure = async(req,res,next) => {
     try{
-        let result = await getIOTSensorsMeasureData2()
+        let result = await getIOTSensorsMeasureData1()
    //     return result;
     //   console.log(result);
    ///
@@ -147,11 +147,12 @@ const db = require('./dbQuery')
 
         )  WITH PRIMARY KEY ;`);
     
-        db.stop_db_Connection();
+   
 
   //      console.log(result);
      
 })
+db.stop_db_Connection();
 console.log("Success 42")
 return{"Success":"OK"}; 
    ///

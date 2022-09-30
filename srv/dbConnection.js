@@ -16,7 +16,7 @@ exports.hana_dbConnection = () => {
 
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+/**
   'use strict';
   const { PerformanceObserver, performance } = require('perf_hooks');
   var util = require('util');
@@ -30,4 +30,4 @@ exports.hana_dbConnection = () => {
     pwd: "Fz9aASqmHKjXPopq6xXjFg5stwtFBYa27rfDZXh5u3SQR3VsrtYLKuTCXN5ds_Uii8jwi_DPxEVVb-0Q5Bm5MGCUd3MUHaZPKf_XdnZIDvc_YkYhzfxU.7RTl2yrejZL",
 
 };
-  
+   */
